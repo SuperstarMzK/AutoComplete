@@ -52,14 +52,15 @@ function memriseMain(){
     var answer;
 
     var runtime = function(){
-        
+
         try{
-            
+
             var endBanner = document.getElementById("session-complete-banner");
-            
+
             if(endBanner.innerText.split("!",1)=="Session complete"){
                 console.log("done");
                 clearInterval(intervalID);
+                window.location.reload(true);
             } else {
                 // pass
             }
